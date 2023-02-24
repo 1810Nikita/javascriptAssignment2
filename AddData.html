@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Form Data-->
+    <h2>Add Your Details</h2>
+    <form id="form" action="EditData.html" onsubmit="myfun(e)">
+        <input type="text" id="name" name="name" placeholder="Name"><br><br>
+        <input type="text" id="address" name="address" placeholder="Address"><br><br>
+        <input type="text" id="empid" name="empid" placeholder="Employee id"><br><br>
+        <input type="text" id="designation" name="designation" placeholder="Designation"><br><br>
+        <input type="button" value="Submit" id="btn" onclick="Submit()">
+        <input type="reset">
+        
+    </form>
+    <!--Table-->
+    <table border="2" id="table">
+        <tr>
+          <td class="col">Name</td>
+          <td class="col">Address</td>
+          <td class="col">Employee Id</td>
+          <td class="col">Designation</td>
+          <td class="col">Action</td>
+        </tr>
+      </table>
+
+    <br>
+    <div id="msg"></div>
+    <br><br>
+    <button><a href="AddData.html">Add Data to Form</a></button>
+    <button><a href="EditData.html"> Edit Details</a></button>
+    <button><a href="Viewdata.html"> View </a></button>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
